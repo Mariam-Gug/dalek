@@ -7,6 +7,7 @@ light: #EEC373;
 foot, eyesocket, right hand shadow: #483434;
 foot, eyesocket, right hand light: #6B4F4F;
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 html, body {
     height: 100%;
@@ -20,6 +21,48 @@ html, body {
     height: 90vmin;
     width: 90vmin;
     background-color: #F4DFBA;
+}
+
+.exterminate {
+    position: absolute;
+    top: 7vmin;
+    left: 7vmin;
+    height: 10vmin;
+    width: 20vmin;
+    background-color: #ecb06c;
+    border-radius: 2vmin;
+    text-align: center;
+    margin: auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    animation: extermination 5s infinite;
+}
+.exterminate::after {
+    content: "";
+    position: absolute;
+    left: 95%;
+    top: 5.5vmin;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #ecb06c;
+    border-bottom: 13px solid transparent;
+    transform: rotate(15deg);
+}
+@keyframes extermination {
+    50% {
+        top: 8vmin;
+    }
+    100% {
+        top: 7vmin;
+    }
+}
+p {
+    display: block;
+    margin-top: 3vmin;
 }
 .head {
     position: absolute;
@@ -210,6 +253,163 @@ html, body {
     border-radius: 50%;
     background-color: #c4935c;
     box-shadow: 14.5vmin 0vmin 0vmin #c4935c;
+}
+.hand {
+    position: absolute;
+    top: -11.5vmin;
+    left: -10vmin;
+    height: 6vmin;
+    width: 6vmin;
+    border-radius: 50%;
+    background-color: #6B4F4F;
+    transform: rotate(-45deg);
+    animation: right-waving 2s infinite;
+}
+@keyframes right-waving {
+    50% {
+    top: -8vmin;
+    left: -12.5vmin;
+    transform: rotate(-60deg);
+    }
+    100% {
+    top: -11.5vmin;
+    left: -10vmin;
+    transform: rotate(-45deg);
+    }
+}
+.hand::before {
+    content:'';
+    position: absolute;
+    left: -.5vmin;
+    height: 3vmin;
+    width: 7vmin;
+    border-radius: 50%;
+    background-color: #8f6a6a;
+}
+.hand::after {
+    content: '';
+    position: absolute;
+    top: 4.5vmin;
+    left: 2.4vmin;
+    height: 15vmin;
+    width: 1vmin;
+    border-radius: 1vmin;
+    background-color: #6B4F4F;
+
+}
+.left-arm {
+    position: absolute;
+    top: -6.5vmin;
+    left: 21.5vmin;
+    height: 12vmin;
+    width: 2.5vmin;
+    border-radius: 1vmin;
+    background-color: #796a6a;
+    transform: rotate(45deg);
+    animation: left-waving 1s infinite;
+}
+@keyframes left-waving {
+    50% {
+        top: -6.5vmin;
+        left: 21.9vmin;
+        transform: rotate(47deg);
+    }
+    100% {
+        top: -6.5vmin;
+        left: 21.5vmin;
+        transform: rotate(45deg);
+    }
+}
+.left-arm::before {
+    content: '';
+    position: absolute;
+    left: .6vmin;
+    height: 12vmin;
+    width: 1vmin;
+    border-radius: 50%;
+    background: transparent;
+    border-right: .5vmin solid #b1a2a2;
+}
+.left-arm::after {
+    content: '';
+    position: absolute;
+    right: .6vmin;
+    height: 12vmin;
+    width: 1vmin;
+    border-radius: 50%;
+    background: transparent;
+    border-left: .5vmin solid #b1a2a2;
+}
+.lightning1 {
+    position: absolute;
+    top: -13vmin;
+    left: 25vmin;
+    width: 0;
+    height: 0;
+    border-left: .8vmin solid transparent;
+    border-right: .8vmin solid transparent;
+    border-bottom: 4vmin solid #78c3ee;
+    transform: rotate(10deg);
+    animation: blinking 1s infinite;
+}
+.lightning1::after {
+    content: '';
+    position: absolute;
+    top: 3.5vmin;
+    width: 0;
+    height: 0;
+    border-left: .8vmin solid transparent;
+    border-right: .8vmin solid transparent;
+    border-top: 4vmin solid #78c3ee;
+}
+.lightning2 {
+    position: absolute;
+    top: -12vmin;
+    left: 31vmin;
+    width: 0;
+    height: 0;
+    border-left: .8vmin solid transparent;
+    border-right: .8vmin solid transparent;
+    border-bottom: 4vmin solid #78c3ee;
+    transform: rotate(45deg);
+    animation: blinking 1s infinite;
+}
+.lightning2::after {
+    content: '';
+    position: absolute;
+    top: 3.5vmin;
+    width: 0;
+    height: 0;
+    border-left: .8vmin solid transparent;
+    border-right: .8vmin solid transparent;
+    border-top: 4vmin solid #78c3ee;
+}
+.lightning3 {
+    position: absolute;
+    top: -5vmin;
+    left: 33vmin;
+    width: 0;
+    height: 0;
+    border-left: .8vmin solid transparent;
+    border-right: .8vmin solid transparent;
+    border-bottom: 4vmin solid #78c3ee;
+    transform: rotate(90deg);
+    animation: blinking 1s infinite;
+}
+.lightning3::after {
+    content: '';
+    position: absolute;
+    top: 3.5vmin;
+    width: 0;
+    height: 0;
+    border-left: .8vmin solid transparent;
+    border-right: .8vmin solid transparent;
+    border-top: 4vmin solid #78c3ee;
+}
+@keyframes blinking {
+    5% {
+        opacity: 0;
+    }
 }
 .middle {
     position: absolute;
