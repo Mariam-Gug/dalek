@@ -44,12 +44,12 @@ html, body {
     content: "";
     position: absolute;
     left: 95%;
-    top: 5.5vmin;
+    top: 5vmin;
     width: 0;
     height: 0;
-    border-top: 13px solid transparent;
-    border-left: 26px solid #ecb06c;
-    border-bottom: 13px solid transparent;
+    border-top: 2.5vmin solid transparent;
+    border-left: 4vmin solid #ecb06c;
+    border-bottom: 2.5vmin solid transparent;
     transform: rotate(15deg);
 }
 @keyframes extermination {
